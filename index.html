@@ -1,0 +1,109 @@
+<!DOCTYPE html>	
+<html>
+	<head>
+		<title>Kevin Cornelissen</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="Description" content="Portfolio website of 19 year old Website Constructor from Belgium.">
+		<meta name="keywords" content="Kevin, Cornelissen, Belgium, Website, Constructor, Webdesign, Development">
+		<meta name="Author" content="Kevin Cornelissen">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="HandheldFriendly" content="true">
+		<!-- favicon -->
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+		<!-- stylesheets -->
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+		<!-- google fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Rokkitt:400' rel='stylesheet' type='text/css'>
+		<!-- jquery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<!-- languageswitch -->
+		<script src="languageswitch.js"></script>
+		<!-- validation -->
+		<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+		<script src="scripts/validation.js"></script>
+		<!-- smooth scroll -->
+		<script src="scripts/smoothscroll.js"></script>
+		<!-- color changer -->
+		<script src="scripts/colorChanger.js"></script>
+		<!-- beeldenwisselaar -->
+		<script type="text/javascript">
+			function afbeeldingWisselen(afbeelding)
+			{
+				document.getElementById("afbeelding").src = afbeelding.href;
+				return false;
+			}
+		</script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-41497471-1', 'graffik.be');
+			ga('send', 'pageview');
+		</script>
+	</head>
+	<body>
+		<div id="home"></div>
+		<div id="overlay">
+			<div class="navRuler" ></div>
+			<div id="outerBox">
+				<div id="box">
+					<div id="navBox">
+						<a href="#home"> <img src="images/up.png" alt="up" height="15" width="15" ></a>
+						<ul class="rokkitt">
+							<li class="navList"><a href="#about" class="link">ABOUT</a></li>
+							<li class="navList"><a href="#portfolio" class="link">PORTFOLIO</a></li>
+							<li class="navList"><a href="#contact" class="link">CONTACT</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div id="wrapper">
+				<div class="welcomeImage"><img id="afbeelding" src="images/welcomeEn.png" ></div>
+				<a href="#about" ><img id="logo" width="150" height="150" alt="logo" src="images/logo.png"></a>
+			</div>
+		</div>
+		<div class="linkHolder" id="about"></div>
+		<div class="aboutBg" >
+			<div id="aboutBox"><h2 class="roboto aboutTitle">ABOUT</h2></div>
+			<div class="topText verdana"><p>My name is Kevin Cornelissen and I’m a 21 year old website constructor. I have a huge passion for design and development.</p></div>
+			<div class="leftText"><h3 class="rokkitt">DESIGN</h3><p class="allign">As a web designer I deliver handcrafted websites that cover all your wishes and add a tremendous value to your company. By brainstorming, sketching and reviewing together,  we will come to a fitting design. I see digital design not only as something artistic, but also as a useful marketing tool. I design with usability, web-standard and functionality in my head all the time.</p></div>
+			<div class="rightText"><h3 class="rokkitt">DEVELOPMENT</h3><p class="allign">When developing a website, my mission is to create a flawless website with as little workarounds as possible, so you get the purest and best out of it. My main skills are HTML, CSS and Javascript. Every day, I learn new things to make more stable and better working websites.</p></div>
+		</div>
+		<div class="linkHolder " id="portfolio"></div>
+		<div class="horizontalLineOne"></div>
+		<div class="portfolioBox"><h2 class="roboto portfolioTitle">PORTFOLIO</h2></div>
+		<div class="portfolio">
+			<div class="text"><h3 class="roboto">ROBOT</h3><p class="verdana">This robot was an assignment that I got for the course "image-processing". They expected us to create a frisky robot with Illustrator. The technical aspect was more important than the creative aspect.</p></div>
+			<div class="image" id="robot"></div>
+		</div>
+		<div class="horizontalLine"></div>
+		<div class="portfolio">
+			<div class="text"><h3 class="roboto">WALLPAPER KEVIN</h3><p class="verdana">This Wallpaper was a personal project of mine. With the use of Photoshop I created my name with "broken" letters. I made this project to develop my Photoshop skills.</p></div>
+			<div class="image" id="wallpaper"></div>
+		</div>
+		<div class="horizontalLine"></div>
+		<div class="portfolio">
+			<div class="text"><h3 class="roboto">KAAS</h3><p class="verdana">This typographic work was an assignment that was given to me in class. The assignment was to create a typographic work with a word and theme of my own choice. I chose the word "cheese", and all I can say is ... the result is delicious!</p></div>
+			<div class="image" id="kaas"></div>
+		</div>
+		<div class="linkHolder" id="contact"></div>
+		<div id="footerBg">
+			<div id="footerBox"><h2 class="roboto">CONTACT</h2></div>
+			<div class="social">
+			</div>
+			<div class="contactForm">
+					<form id="register-form" method="post" action="scripts/contact.php">
+						<label for="email" class="rokkitt descriptionOne">EMAIL</label>
+						<input class="input" id="email" name="email" type="text" >
+						<label for="message" class="rokkitt descriptionTwo">MESSAGE</label>
+						<textarea class="input message" id="message" name="message" ></textarea>
+						<div class="clearer"></div>
+						<input id="submit" class="roboto" name="submit" type="submit" value="SUBMIT"> 
+					</form>
+				</div>
+		</div>
+	</body>
+</html>

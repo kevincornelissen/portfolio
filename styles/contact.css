@@ -1,0 +1,21 @@
+.contact{
+	background-color: #191919;
+	width: 60%;
+	height: 100%;
+	margin: auto;
+}
+
+.rokkitt{
+	font-family: 'Rokkitt', serif;
+	font-weight: 400;
+	color:white;
+	font-size: 3em;
+	text-align: center;
+	text-decoration: none;
+}
+
+a:visited{
+	text-decoration: none;
+	color: white;
+	
+}
